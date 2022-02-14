@@ -1,0 +1,6 @@
+<h1>Form</h1>
+<p th:text="'Hello, ' + ${name} + '!'" />
+    <form action="#" th:action="@{/greeting}" method="get">
+        <p>Name: <input type="text" th:value="${name}" name="name" /></p>
+        <p><input type="submit" value="Submit" /> </p>
+    </form>
